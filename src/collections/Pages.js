@@ -1,5 +1,6 @@
 import { TwoColumn } from "../blocks/TwoColumn";
 import { Hero } from "../blocks/Hero";
+import { Carousel } from "../blocks/Carousel";
 
 export const Pages = {
   slug: "pages",
@@ -7,12 +8,15 @@ export const Pages = {
     singular: "Page",
     plural: "Pages",
   },
+  admin: {
+    useAsTitle: "title",
+  },
   access: {
     read: () => true,
   },
   fields: [
     {
-      name: "name",
+      name: "title",
       label: "Name",
       type: "text",
       required: true,
@@ -27,7 +31,7 @@ export const Pages = {
       name: "layout",
       label: "Layout",
       type: "blocks",
-      blocks: [Hero, TwoColumn],
+      blocks: [Hero, Carousel, TwoColumn],
     },
   ],
 };

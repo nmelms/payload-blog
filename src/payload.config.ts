@@ -7,7 +7,7 @@ import { slateEditor } from "@payloadcms/richtext-slate";
 import { buildConfig } from "payload/config";
 
 import Users from "./collections/Users";
-import { Pages } from "./collections/pages";
+import Pages from "./collections/Pages";
 import { Media } from "./collections/Media";
 
 export default buildConfig({

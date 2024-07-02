@@ -1,5 +1,6 @@
-// TwoColumn.js
-export const TwoColumn = {
+import { Block } from "payload/types";
+
+export const TwoColumn: Block = {
   slug: "twoColumn",
   labels: {
     singular: "Two Column Block",

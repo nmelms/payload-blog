@@ -1,4 +1,6 @@
-export const Carousel = {
+import { Block } from "payload/types";
+
+export const Carousel: Block = {
   slug: "carousel",
   labels: {
     singular: "Carousel",

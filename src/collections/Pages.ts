@@ -1,22 +1,23 @@
 import { TwoColumn } from "../blocks/TwoColumn";
 import { Hero } from "../blocks/Hero";
 import { Carousel } from "../blocks/Carousel";
+import { CollectionConfig } from "payload/types";
 
-export const Pages = {
+const Pages: CollectionConfig = {
   slug: "pages",
   labels: {
     singular: "Page",
     plural: "Pages",
   },
   admin: {
-    useAsTitle: "title",
+    useAsTitle: "name",
   },
   access: {
     read: () => true,
   },
   fields: [
     {
-      name: "title",
+      name: "name",
       label: "Name",
       type: "text",
       required: true,
@@ -35,3 +36,5 @@ export const Pages = {
     },
   ],
 };
+
+export default Pages;
